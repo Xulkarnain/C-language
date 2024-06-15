@@ -85,7 +85,7 @@
 //     return 0;
 // }
 
-//6. Write a program in C to display the multiplication table for a given integer
+// 6. Write a program in C to display the multiplication table for a given integer
 
 // int main()
 // {
@@ -101,7 +101,7 @@
 //     return 0;
 // }
 
-//7. Write a program in C to display the multiplier table vertically from 1 to n.
+// 7. Write a program in C to display the multiplier table vertically from 1 to n.
 
 // int main()
 // {
@@ -112,9 +112,9 @@
 //         printf("%d X %d = %d,",n,i,n*i);
 //         n++;
 //     }
-    
+
 //     printf("\n");
-    
+
 //     for (int i = 2,n=1; i<= 10,n<=8; )
 //     {
 //         printf("%d X %d = %d,",n,i,n*i);
@@ -125,7 +125,7 @@
 //     return 0;
 // }
 
-//8. Write a C program to display the n terms of odd natural numbers and their sum.
+// 8. Write a C program to display the n terms of odd natural numbers and their sum.
 
 // int main()
 // {
@@ -145,15 +145,15 @@
 //     return 0;
 // }
 
-//9. Write a program in C to display a pattern like a right angle triangle using an asterisk. The pattern like : 
-//* 
-//** 
-//*** 
+// 9. Write a program in C to display a pattern like a right angle triangle using an asterisk. The pattern like :
+//*
+//**
+//***
 //****
 
 // int main()
 // {
-    
+
 //     for (int i = 0; i < 5; i++)
 //     {
 //         for (int j = 0; j <= i; j++)
@@ -165,12 +165,12 @@
 //     return 0;
 // }
 
-//11. Write a program in C to make such a pattern like a right angle triangle with a number which will repeat a number in a row. 
-//The pattern like  
-// 1 
-// 22 
-// 333 
-// 4444
+// 11. Write a program in C to make such a pattern like a right angle triangle with a number which will repeat a number in a row.
+// The pattern like
+//  1
+//  22
+//  333
+//  4444
 
 // int main()
 // {
@@ -185,13 +185,13 @@
 //     return 0;
 // }
 
-//12. Write a program in C to make such a pattern like a right angle triangle with the number increased by
-//1. The pattern like :
+// 12. Write a program in C to make such a pattern like a right angle triangle with the number increased by
+// 1. The pattern like :
 
 /*
-1 
-2 3 
-4 5 6 
+1
+2 3
+4 5 6
 7 8 9 10*/
 
 // int main()
@@ -209,27 +209,53 @@
 //     return 0;
 // }
 
-//14. Write a C program to make such a pattern as a pyramid with an asterisk
+// 13. Write a program in C to make a pyramid pattern with numbers increased by 1.
+//    1
+//   2 3
+//  4 5 6
+// 7 8 9 10
 
-/*     * 
-      * * 
-     * * * 
-    * * * *    */
+// int main()
+// {
+//     int n=1;
+
+//     for (int  i = 1; i <= 4; i++)
+//     {
+//         for (int j = 1; j <= 4-i; j++)
+//         {
+//             printf(" ");
+//         }
+//         for (int k = 1; k <= i; k++)
+//         {
+//             printf("%d ",n);
+//             n++;
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+// 14. Write a C program to make such a pattern as a pyramid with an asterisk
+
+/*     *
+ * *
+ * * *
+ * * * *    */
 
 // int main()
 // {
 //     int rows;
 //     printf("Number of rows: ");
 //     scanf("%d", &rows);
- 
+
 //     // first loop to print all rows
 //     for (int i = 1; i <= rows; i++) {
- 
+
 //         // inner loop 1 to print white spaces
 //         for (int j = 1; j <= (rows - i); j++) {
 //             printf(" ");
 //         }
- 
+
 //         // inner loop 2 to print numbers
 //         for (int k = 1; k <= i; k++) {
 //             printf("* ");
@@ -238,7 +264,7 @@
 //     }
 //     return 0;
 // }
-//15. Write a C program to calculate the factorial of a given number
+// 15. Write a C program to calculate the factorial of a given number
 
 // int main()
 // {
@@ -256,3 +282,75 @@
 //     return 0;
 // }
 
+// 16. Write a C program to display the sum of n terms of even natural numbers.
+
+// int main()
+// {
+//     int n,sum,even;
+
+//     printf("Input number of terms :");
+//     scanf("%d",&n);
+
+//     for (int i = 1; i <= n; i++)
+//     {
+//         even = even + 2;
+//         printf("%d",even);
+//         sum=sum + even;
+//     }
+//     printf("\nThe Sum of even Natural Number upto %d terms :%d",n,sum);
+//     return 0;
+// }
+
+// 17. Write a C program to make such a pattern like a pyramid with a number which will repeat the number in the same row.
+
+//   1
+//  2 2
+// 3 3 3
+// 4 4 4 4
+
+// int main()
+// {
+//     for (int i = 1; i <= 4; i++)
+//     {
+//         for (int j = 1; j <= 4-i; j++)
+//         {
+//             printf(" ");
+//         }
+//         for (int k = 1; k <= i; k++)
+//         {
+//             printf("%d ",i);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+// 18. Write a program in C to find the sum of the series [ 1-X^2/2!+X^4/4!- .........].
+
+void main()
+{
+    float x, sum, t, d; // Declare variables to store input and intermediate values.
+    int i, n;           // Declare variables for loop control and input.
+
+    // Prompt the user to input the value of 'x'.
+    printf("Input the Value of x :");
+    scanf("%f", &x); // Read the value of 'x' from the user.
+
+    // Prompt the user to input the number of terms.
+    printf("Input the number of terms : ");
+    scanf("%d", &n); // Read the value of 'n' from the user.
+
+    sum = 1; // Initialize 'sum' to 1, as the first term is always 1.
+    t = 1;   // Initialize 't' to 1 for the first term.
+
+    // Loop to calculate the sum of the series.
+    for (i = 1; i < n; i++)
+    {
+        d = (2 * i) * (2 * i - 1); // Calculate the denominator for the term.
+        t = -t * x * x / d;        // Calculate the term value.
+        sum = sum + t;             // Add the term to the sum.
+    }
+
+    // Print the final result along with the input values.
+    printf("\nThe sum = %f\nNumber of terms = %d\nValue of x = %f\n", sum, n, x);
+}
