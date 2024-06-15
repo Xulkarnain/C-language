@@ -327,7 +327,7 @@
 
 // 18. Write a program in C to find the sum of the series [ 1-X^2/2!+X^4/4!- .........].
 
-void main()
+/*void main()
 {
     float x, sum, t, d; // Declare variables to store input and intermediate values.
     int i, n;           // Declare variables for loop control and input.
@@ -353,4 +353,68 @@ void main()
 
     // Print the final result along with the input values.
     printf("\nThe sum = %f\nNumber of terms = %d\nValue of x = %f\n", sum, n, x);
+}*/
+
+// 19. Write a program in C to display the n terms of a harmonic series and their sum. 1 + 1/2 + 1/3 + 1/4 + 1/5 ... 1/n terms
+
+/*int main()
+{
+    int n;
+
+    float d = 1, x = 1, sum;
+
+    printf("enter limit : ");
+    scanf("%d", &n);
+
+    for (int i = 1; i <= n; i++)
+    {
+        x = 1 / d;
+        sum = sum + x;
+        d++;
+    }
+    printf("Sum of Series upto %d terms : %f", n, sum);
+    return 0;
+}*/
+
+//20. Write a C program to display the pattern as a pyramid using asterisks, with each row containing an odd number of asterisks.
+/*
+   * 
+  *** 
+ *****
+
+*/
+
+/*int main()
+{
+    int n=1;
+    for (int i = 1; i <= 3; i++)
+    {
+        for (int j = 1; j <= 5-n ; j++)
+        {
+            printf(" ");
+        }
+        for (int k = 1; k <= n ; k++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+        n=n+2;
+    }
+    return 0;
+}*/
+
+//21. Write a program in C to display the sum of the series [ 9 + 99 + 999 + 9999 ...].
+
+int main()
+{
+    int n,t,sum;
+
+    printf("enter a limit :");
+    scanf("%d",&n);
+
+    for (int i = 1; i <= n; i++)
+    {
+        t=9
+    }
+    
 }
