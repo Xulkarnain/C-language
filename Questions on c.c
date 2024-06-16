@@ -376,10 +376,10 @@
     return 0;
 }*/
 
-//20. Write a C program to display the pattern as a pyramid using asterisks, with each row containing an odd number of asterisks.
+// 20. Write a C program to display the pattern as a pyramid using asterisks, with each row containing an odd number of asterisks.
 /*
-   * 
-  *** 
+   *
+  ***
  *****
 
 */
@@ -403,18 +403,66 @@
     return 0;
 }*/
 
-//21. Write a program in C to display the sum of the series [ 9 + 99 + 999 + 9999 ...].
+// 21. Write a program in C to display the sum of the series [ 9 + 99 + 999 + 9999 ...].
 
-int main()
+/*int main()
 {
-    int n,t,sum;
+    int n, t = 11, sum, x = 9,e=100;
 
     printf("enter a limit :");
-    scanf("%d",&n);
+    scanf("%d", &n);
 
     for (int i = 1; i <= n; i++)
     {
-        t=9
+        printf("%d ", x);
+        sum = sum + x;
+
+        x = 9 * t;
+        t = t + e;
+        
+        e=e*10;
+        
+        
     }
-    
+    printf("The sum of the saries = %d", sum);
+    return 0;
+}*/
+
+//22. Write a program in C to print Floyd's Triangle.
+
+/*
+1
+01
+101
+0101
+10101 
+*/
+
+int main()
+{
+    int n=1,k,j,i,p,q;
+    for (i = 1; i <= 5; i++)
+    {
+        
+         if (i % 2 == 0) // Check if 'i' is even.
+        {
+            p = 1;
+            q = 0;
+        }
+        else // If 'i' is odd.
+        {
+            p = 0;
+            q = 1;
+        }
+
+        for (j = 1; j <= i; j++) // Loop for each element in the row.
+        {
+            if (j % 2 == 0) // Check if 'j' is even.
+                printf("%d", p); // Print 'p' if 'j' is even.
+            else
+                printf("%d", q); // Print 'q' if 'j' is odd.
+        }
+        printf("\n");
+    }
+    return 0;
 }
