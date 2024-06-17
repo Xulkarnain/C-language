@@ -438,7 +438,7 @@
 10101 
 */
 
-int main()
+/*int main()
 {
     int n=1,k,j,i,p,q;
     for (i = 1; i <= 5; i++)
@@ -465,4 +465,27 @@ int main()
         printf("\n");
     }
     return 0;
+} */
+
+//23. Write a program in C to find the sum of the series [x - x^3 + x^5 + ......].
+
+int main()
+{
+    int x,n,r=1,sum;
+
+    printf("Input the value of x :");
+    scanf("%d",&x);
+
+    printf("Input number of terms :");
+    scanf("%d",&n);
+
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n ; j++)
+        {
+            
+        }
+        
+    }
+    
 }
