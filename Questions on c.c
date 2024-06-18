@@ -469,23 +469,71 @@
 
 //23. Write a program in C to find the sum of the series [x - x^3 + x^5 + ......].
 
+// int main()
+// {
+//     int x,n,r=1,sum;
+
+//     printf("Input the value of x :");
+//     scanf("%d",&x);
+
+//     printf("Input number of terms :");
+//     scanf("%d",&n);
+
+//     for (int i = 1; i <= n; i++)
+//     {
+//         for (int j = 1; j <= n ; j++)
+//         {
+            
+//         }
+        
+//     }
+    
+// }
+
+//24. Write a program in C to find the sum of the series [ x - x^3 + x^5 + ......].
+
+//25. Write a C program that displays the n terms of square natural numbers and their sum.
+
+/*
 int main()
 {
-    int x,n,r=1,sum;
+    int s,n,sum,sq;
 
-    printf("Input the value of x :");
-    scanf("%d",&x);
+    printf("Input the number of terms :");
+    scanf("%d",&n);
+    printf("The square natural upto 5 terms are :");
 
-    printf("Input number of terms :");
+    for (int i = 1; i <= n; i++)
+    {
+        s=i*i;
+        printf(" %d",s);
+        sum=sum+s;
+    }
+    printf("\nThe Sum of Square Natural Number upto 5 terms = %d",sum);
+    return 0;
+} */
+
+//26. Write a program in C to find the sum of the series 1 +11 + 111 + 1111 + .. n terms.
+
+/*
+int main()
+{
+    int n,x=1,t=11,e=100,sum;
+
+    printf("Input the number of terms :");
     scanf("%d",&n);
 
     for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= n ; j++)
-        {
-            
-        }
-        
+        printf("%d +", x);
+        sum = sum + x;
+
+        x = 1 * t;
+        t = t + e;
+        e=e*10;
     }
-    
+    printf("The Sum is : %d",sum);
+    return 0;
 }
+*/
+
