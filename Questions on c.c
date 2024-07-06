@@ -419,23 +419,23 @@
 
         x = 9 * t;
         t = t + e;
-        
+
         e=e*10;
-        
-        
+
+
     }
     printf("The sum of the saries = %d", sum);
     return 0;
 }*/
 
-//22. Write a program in C to print Floyd's Triangle.
+// 22. Write a program in C to print Floyd's Triangle.
 
 /*
 1
 01
 101
 0101
-10101 
+10101
 */
 
 /*int main()
@@ -443,7 +443,7 @@
     int n=1,k,j,i,p,q;
     for (i = 1; i <= 5; i++)
     {
-        
+
          if (i % 2 == 0) // Check if 'i' is even.
         {
             p = 1;
@@ -467,7 +467,7 @@
     return 0;
 } */
 
-//23. Write a program in C to find the sum of the series [x - x^3 + x^5 + ......].
+// 23. Write a program in C to find the sum of the series [x - x^3 + x^5 + ......].
 
 // int main()
 // {
@@ -483,16 +483,16 @@
 //     {
 //         for (int j = 1; j <= n ; j++)
 //         {
-            
+
 //         }
-        
+
 //     }
-    
+
 // }
 
-//24. Write a program in C to find the sum of the series [ x - x^3 + x^5 + ......].
+// 24. Write a program in C to find the sum of the series [ x - x^3 + x^5 + ......].
 
-//25. Write a C program that displays the n terms of square natural numbers and their sum.
+// 25. Write a C program that displays the n terms of square natural numbers and their sum.
 
 /*
 int main()
@@ -513,7 +513,7 @@ int main()
     return 0;
 } */
 
-//26. Write a program in C to find the sum of the series 1 +11 + 111 + 1111 + .. n terms.
+// 26. Write a program in C to find the sum of the series 1 +11 + 111 + 1111 + .. n terms.
 
 /*
 int main()
@@ -537,3 +537,67 @@ int main()
 }
 */
 
+// 27. Write a C program to check whether a given number is a 'Perfect' number or not.
+
+/*
+int main()
+{
+    int n, x;
+
+    printf("Input the number :");
+    scanf("%d", &n);
+
+    printf("\nThe positive divisor : ");
+    for (int i = 1; i <= n / 2; i++) // imp* because after n is divide in half , the number coming after wont ever be proper divisor of n.
+    {
+
+        if (n % i == 0)
+        {
+            x += i;
+            printf("%d ", i);
+        }
+    }
+    printf("\nThe sum of the divisor is : %d", x);
+
+    if (x == n)
+    {
+        printf("\nSo, the number is perfect.");
+    }
+    else
+        printf("\nSo, the number is not perfect.");
+
+    return 0;
+}
+*/
+
+//28. Write a C program to find the 'Perfect' numbers within a given number of ranges
+
+int main()
+{
+    int n,m,x,y;
+
+    printf("Input the starting range or number :");
+    scanf("%d",&n);
+    printf("\nInput the ending range of number :");
+    scanf("%d",&m);
+    printf("\nThe Perfect numbers within the given range :");
+
+t :    for (int i = 1; i <= n/2 ; i++)
+    {
+        
+        if (n%i==0)
+        {
+            x += i;
+        }
+        
+    }
+        if (x == n)
+        {
+            printf("%d",x);
+        }
+        else
+        n++;
+
+        goto t;
+    
+}
