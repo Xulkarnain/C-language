@@ -31,7 +31,7 @@ int main()
 
 //2. Count frequency of each element.
 
-/*
+
 int main()
 {
     int arr[5]={2,5,4,2,1};
@@ -50,16 +50,13 @@ int main()
         if (arr[i] < min)
         {
             freq[i] = arr[i];
-        }
-        
+        }        
     }
     for (int i = 0; i < 5; i++)
     {
         printf("%d",freq[i]);
     }
     return 0;
-
-
 }
-*/
+
 

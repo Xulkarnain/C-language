@@ -570,34 +570,71 @@ int main()
 }
 */
 
-//28. Write a C program to find the 'Perfect' numbers within a given number of ranges
+// 28. Write a C program to find the 'Perfect' numbers within a given number of ranges
 
+/*
 int main()
 {
-    int n,m,x,y;
+    int n, m, x, y;
 
     printf("Input the starting range or number :");
-    scanf("%d",&n);
+    scanf("%d", &n);
     printf("\nInput the ending range of number :");
-    scanf("%d",&m);
+    scanf("%d", &m);
     printf("\nThe Perfect numbers within the given range :");
 
-t :    for (int i = 1; i <= n/2 ; i++)
+    while (n <= m)
     {
-        
-        if (n%i==0)
+        x=0;
+
+        for (int i = 1; i <= n / 2; i++)
         {
-            x += i;
+
+            if (n % i == 0)
+            {
+                x += i;
+            }
         }
-        
-    }
         if (x == n)
         {
-            printf("%d",x);
+            printf("%d ", x);
+            n++;
         }
         else
-        n++;
-
-        goto t;
-    
+            n++;
+    }
+    return 0;
 }
+*/
+
+// 29. Write a C program to check whether a given number is an Armstrong number or not.
+
+
+/*
+int main()
+{
+    int n, x, cube, realnum;
+
+    printf("Input a number:");
+    scanf("%d", &n);
+
+    realnum = n;
+    while (realnum != 0)
+    {
+        x = realnum % 10;
+
+        cube += x * x * x;
+
+        realnum /= 10;
+    }
+    if (cube == n)
+    {
+        printf("%d is an Armstrong number", n);
+    }
+    else
+        printf("%d is not an Armstrong number", n);
+    return 0;
+}
+*/
+
+//30. Write a C program to find the Armstrong number for a given range of number.
