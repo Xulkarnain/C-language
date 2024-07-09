@@ -31,7 +31,7 @@ int main()
 
 //2. Count frequency of each element.
 
-
+/*
 int main()
 {
     int arr[5]={2,5,4,2,1};
@@ -57,6 +57,16 @@ int main()
         printf("%d",freq[i]);
     }
     return 0;
+}
+*/
+
+//3. Decimal into Octal conversion
+
+//4. Armstrong number in an array
+
+int main()
+{
+
 }
 
 

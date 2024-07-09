@@ -609,7 +609,6 @@ int main()
 
 // 29. Write a C program to check whether a given number is an Armstrong number or not.
 
-
 /*
 int main()
 {
@@ -637,4 +636,94 @@ int main()
 }
 */
 
-//30. Write a C program to find the Armstrong number for a given range of number.
+// 30. Write a C program to find the Armstrong number for a given range of number.
+
+/*
+int main()
+{
+    int n, s, e, realnum, x, cube;
+
+    printf("Input starting number of range:");
+    scanf("%d", &s);
+    printf("\nInput ending number of range :");
+    scanf("%d", &e);
+
+    n = s;
+    printf("Armstrong numbers in given range are: ");
+
+    while(e >= s)
+    {
+        x=0;n=s;cube=0;
+        while (n != 0)
+        {
+            x = n % 10;
+
+            cube += x * x * x;
+
+            n /= 10;
+        }
+        if (cube == s)
+        {
+            printf("%d ", cube);
+            s++;
+
+        }
+        else
+            s++;
+
+    }
+    return 0;
+}
+*/
+
+// 31. Write a program in C to display a pattern like a diamond.
+/*
+ *
+ ***
+ *****
+ *******
+ *********
+ *******
+ *****
+ ***
+ *
+
+int main()
+{
+    for (int i = 0; i < 5; i++)
+    {
+
+        for (int j = 1; j < 5; j++)
+        {
+            printf(" ");
+
+            for (int k = 5; k > 1; k++)
+            {
+                printf("*");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+ */
+
+// 32. Write a C program to determine whether a given number is prime or not.
+
+int main()
+{
+    int n;
+
+    printf("Input a number:");
+    scanf("%d", &n);
+
+    for (int i = 1; i <= n; i++)
+    {
+        if (i % n == 0 && i == n)
+        {
+            printf("%d is a prime number.", n);
+        }
+    }
+    
+    return 0;
+}
