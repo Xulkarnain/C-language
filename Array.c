@@ -270,21 +270,43 @@ int main()
 }
 */
 
-//14. Sort array in ascending order
+// 14. Sort array in arrending order
 
+/*
 int main()
 {
-    int arr[10]={21, 42, 53, 43, 64, 7, 45, 8, 2, 5};
-    int asc[10],x;
-    x=arr[0];
+	int Array[50], i, j, temp, Size;
+	
+	printf("\nPlease Enter the Number of elements in an array  :  ");
+	scanf("%d", &Size);
+	
+	printf("\nPlease Enter %d elements of an Array \n", Size);
+	for (i = 0; i < Size; i++)
+	{
+		scanf("%d", &Array[i]);
+    }     
+	for (i = 0; i < Size; i++)
+	{
+		for (j = i + 1; j < Size; j++)
+		{
+			if(Array[i] > Array[j])
+			{
+				temp = Array[i];
+				Array[i] = Array[j];
+				Array[j] = temp;
+			}
+			
+		}
+	}
+	printf("\n **** Array of Elemenst in Ascending Order are : ****\n");
+	for (i = 0; i < Size; i++)
+	{
+		printf("%d\t", Array[i]);
+	}
+	
+	return 0;
+}   
+*/
 
-    for (int i = 0; i < 10; i++)
-    {
-        if (arr[i]>x)
-        {
-            
-        }
-        
-    }
-    
-}
+//15. Count occurrences of numbers
+
