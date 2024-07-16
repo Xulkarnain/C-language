@@ -88,7 +88,6 @@ int main()
 
 // 4. Armstrong number in an array
 
-
 // counting the number of elements in array
 
 /*
@@ -104,7 +103,7 @@ int main()
 }
 */
 
-//5. Separate out +ve, -ve and 0s
+// 5. Separate out +ve, -ve and 0s
 
 /*
 int main()
@@ -144,7 +143,7 @@ int main()
     return 0;
 }
 */
-//7. Sum of 10 integers
+// 7. Sum of 10 integers
 
 /*
 int main()
@@ -162,10 +161,9 @@ int main()
 }
 */
 
-//8. Compare sum of given elements  // I cant understan the question
+// 8. Compare sum of given elements  // I cant understan the question
 
-
-//9. Sum of even numbers in array
+// 9. Sum of even numbers in array
 
 /*
 int main()
@@ -185,7 +183,7 @@ int main()
 }
 */
 
-//10. Print odd numbers in array
+// 10. Print odd numbers in array
 
 /*
 int main()
@@ -203,7 +201,7 @@ int main()
 }
 */
 
-//11. Find sum and average
+// 11. Find sum and average
 
 /*
 int main()
@@ -222,4 +220,71 @@ int main()
 }
 */
 
-//12. Print max & min array element
+// 12. Print max & min array element
+
+/*
+int main()
+{
+    int arr[5] = {34, 64, 63, 77, 34};
+    int max, min;
+
+    max = arr[0];
+    min = arr[0];
+
+    for (int i = 0; i < 5; i++)
+    {
+        if (arr[i] > max)
+        {
+            max = arr[i];
+        }
+        if (arr[i] < min)
+        {
+            min = arr[i];
+        }
+    }
+    printf("the minimum array element is %d\n", min);
+    printf("the maximum array element is %d", max);
+    return 0;
+}
+*/
+
+// 13. Search a number in an array  //please provide it with exaple i can't completely understand this
+
+/*
+int main()
+{
+    int arr[10] = {21, 42, 53, 43, 64, 7, 45, 8, 2, 5};
+    int x, s;
+
+    printf("Enter the number you want to search : ");
+    scanf("%d", &x);
+
+    for (int i = 0; i < 10; i++)
+    {
+        if (arr[i] == x)
+        {
+            printf("the element %d is in array ", x);
+        }
+    }
+    return 0;
+}
+*/
+
+//14. Sort array in ascending order
+
+int main()
+{
+    int arr[10]={21, 42, 53, 43, 64, 7, 45, 8, 2, 5};
+    int asc[10],x;
+    x=arr[0];
+
+    for (int i = 0; i < 10; i++)
+    {
+        if (arr[i]>x)
+        {
+            
+        }
+        
+    }
+    
+}
