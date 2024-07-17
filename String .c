@@ -39,6 +39,7 @@ int main()
 
 // Get string from user
 
+/*
 int main()
 {
     char s[20];
@@ -65,5 +66,42 @@ int main()
 
     puts(s);
 
+    return 0;
+}
+*/
+
+//Pre defined functions for strings manuplation
+
+//1. strlen()  gives length of string
+
+//2. strrev()  Reverse's th string
+
+//3. strlwr()  converts uppercase to lowercase
+
+//4  strupr()  converts lowercase to uppercase
+
+//5. strcpy()  copies string strcpy(s,"bhopal")
+
+//6. strcmpr()  copares two strings if same returns 0 if not then 1
+
+//7. strcat()  As two strings
+
+int main()
+{
+    char s[3][10];
+
+    int i;
+    
+    printf("enter three strings");
+
+    for (int  i = 0; i < 3; i++)
+    {
+        gets(s[i]);
+    }
+    
+    for (int i = 0; i < 3; i++)
+    {
+        printf("%s \n",s[i]);
+    }
     return 0;
 }
