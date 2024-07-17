@@ -275,38 +275,57 @@ int main()
 /*
 int main()
 {
-	int Array[50], i, j, temp, Size;
-	
-	printf("\nPlease Enter the Number of elements in an array  :  ");
-	scanf("%d", &Size);
-	
-	printf("\nPlease Enter %d elements of an Array \n", Size);
-	for (i = 0; i < Size; i++)
-	{
-		scanf("%d", &Array[i]);
-    }     
-	for (i = 0; i < Size; i++)
-	{
-		for (j = i + 1; j < Size; j++)
-		{
-			if(Array[i] > Array[j])
-			{
-				temp = Array[i];
-				Array[i] = Array[j];
-				Array[j] = temp;
-			}
-			
-		}
-	}
-	printf("\n **** Array of Elemenst in Ascending Order are : ****\n");
-	for (i = 0; i < Size; i++)
-	{
-		printf("%d\t", Array[i]);
-	}
-	
-	return 0;
-}   
+    int Array[50], i, j, temp, Size;
+
+    printf("\nPlease Enter the Number of elements in an array  :  ");
+    scanf("%d", &Size);
+
+    printf("\nPlease Enter %d elements of an Array \n", Size);
+    for (i = 0; i < Size; i++)
+    {
+        scanf("%d", &Array[i]);
+    }
+    for (i = 0; i < Size; i++)
+    {
+        for (j = i + 1; j < Size; j++)
+        {
+            if(Array[i] > Array[j])
+            {
+                temp = Array[i];
+                Array[i] = Array[j];
+                Array[j] = temp;
+            }
+
+        }
+    }
+    printf("Array of Elemenst in Ascending Order are : ");
+    for (i = 0; i < Size; i++)
+    {
+        printf("%d\t", Array[i]);
+    }
+
+    return 0;
+}
 */
 
-//15. Count occurrences of numbers
+// 15. Count occurrences of numbers
 
+// int main()
+// {
+//     int arr[46] = {1, 23, 4, 3, 533, 63, 45, 34, 65, 34, 75, 45, 35, 67, 34, 345, 7, 6, 345, 76, 5234, 5654, 6, 4, 7, 4, 5, 3, 7, 43, 5, 7, 3, 5, 7, 5, 7, 34, 6, 78, 5, 4, 46, 4, 3, 6};
+//     int count, x;
+//     count = arr[0];
+
+//     for (int i = 0; i < 46; i++)
+//     {
+//         for (int j = ; j < 46; i++)
+//         {
+//             if (count == arr[i])
+//             {
+//                 x = arr[i];
+//                 count++;
+//             }
+//         }
+//         printf("")
+//     }
+// }    
