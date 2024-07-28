@@ -87,3 +87,35 @@ void swap(int *p, int *q)   // stores the address of a and b in pointer p and q
 }
 */
 
+// WAP that recieves 5 integers and returns the sum , average an standard deviation of these. numbers. Call his function from main and print the result
+
+
+/*
+void sumavg(int * , float *);
+
+int main()
+{
+    int sum;
+    float avg;
+
+    sumavg(&sum,&avg);
+
+    printf("sum is = %d , average is = %f", sum,avg);
+
+    return 0;
+}
+
+void sumavg(int *sum , float * avg)
+{
+    int n1,n2,n3,n4,n5;
+
+    printf("Enter 5 no :");
+    scanf("%d %d %d %d %d",&n1,&n2,&n3,&n4,&n5);
+
+    *sum=n1+n2+n3+n4+n5;
+
+    *avg = *sum/5;
+}
+*/
+
+//

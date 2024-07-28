@@ -1,7 +1,5 @@
 /*
 
-3.  Write a C program to perform Scalar matrix multiplication.
-4.  Write a C program to multiply two matrices.
 5.  Write a C program to check whether two matrices are equal or not.
 6.  Write a C program to find sum of main diagonal elements of a matrix.
 7.  Write a C program to find sum of minor diagonal elements of a matrix.
@@ -105,13 +103,14 @@ main()
 
 //3.  Write a C program to perform Scalar matrix multiplication.
 
+/*
 int main()
 {
-    int arr[2][3],err[2][3],mult[2][2];
+    int arr[3][3],err[3][3],mult[3][3];
 
     printf("enter first matricies : \n");
 
-    for (int i = 0; i < 2; i++)
+    for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3 ; j++)
         {
@@ -121,24 +120,45 @@ int main()
 
     printf("Enter second matricies : \n");
 
-    for (int i = 0; i < 2; i++)
+    for (int i = 0; i < 3; i++)
     {
-        for (int j = 0; j < 2 ; j++)
+        for (int j = 0; j < 3 ; j++)
         {
             scanf("%d",&err[i][j]);
         }    
     }
+    int sum = 0;
 
     printf("multiplied matricies : \n");
 
-     for (int i = 0; i < 2; i++)
+     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3 ; j++)
         {
-           mult[i][j]=arr[i][j] * err[i][j];
-           printf("%d ",mult[i][j]);
+         for (int  k = 0; k < 3; k++)
+         {
+            sum += arr[i][k] * err[k][j];
+         }
+          mult[i][j] = sum;
+          sum =0;
         }    
+        
+    }
+
+    printf("multiplied mari is : \n");
+
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            printf("%d  ",mult[i][j]);
+        }
         printf("\n");
     }
+    
     return 0;
 }
+*/
+
+//4.  Write a C program to multiply two matrices.
+
