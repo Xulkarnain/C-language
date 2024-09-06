@@ -55,3 +55,27 @@ char* reverse(char *p)
     
 }
 */
+
+int length(char *);
+
+int main()
+{
+    char str[20];
+
+    printf("enter a string :");
+    gets(str);
+
+    printf("%d",length(str));
+
+    return 0;
+}
+
+int length(char *p)
+{
+    int i;
+
+    for ( i = 0; *(p+i) != '\0'; i++)
+    {
+    }
+    return i;
+}

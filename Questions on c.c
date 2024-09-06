@@ -710,20 +710,53 @@ int main()
 
 // 32. Write a C program to determine whether a given number is prime or not.
 
+/*
 int main()
 {
-    int n;
+    int n,count;
 
-    printf("Input a number:");
-    scanf("%d", &n);
+    printf("enter a number :");
+    scanf("%d",&n);
 
     for (int i = 1; i <= n; i++)
     {
-        if (i % n == 0 && i == n)
+        if (i%n==0)
         {
-            printf("%d is a prime number.", n);
+            count++;
         }
     }
-    
+    if (count == 0)
+    {
+        printf("no. is prime");
+    }
+    else
+        printf("no. is not prime");
+
+    return 0;
+
+}
+*/
+
+// 33. Write a C program to display Pascal's triangle.
+
+// 34. Write a program in C to find the prime numbers within a range of numbers
+
+#include <stdio.h>
+
+int main()
+{
+    int N, i, j;
+    printf("entr a number ");
+    scanf("%d", &N);
+    for (i = 3; i <= N; i++)
+    {
+        for (j = 3; j <= i; j++)
+        {
+            if (i % j == 0)
+                break;
+        }
+        if (j == i)
+            printf("%d ", i);
+    }
     return 0;
 }

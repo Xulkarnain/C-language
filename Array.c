@@ -329,3 +329,25 @@ int main()
 //         printf("")
 //     }
 // }    
+
+//insertion of element in array
+
+int main()
+{
+    int arr[]={2,4,3,2,5,0,0,0,0,};
+    int n,i;
+
+    
+
+    printf("where you want to insert the element : ");
+    scanf("%d",&n);
+
+    for ( i = 0; i < 8; i++)
+    {
+        arr[i+1]=arr[i];
+
+
+    }
+    
+
+}

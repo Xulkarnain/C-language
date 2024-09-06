@@ -162,3 +162,41 @@ int main()
 
 //4.  Write a C program to multiply two matrices.
 
+#include <conio.h>
+
+
+char prime(int);
+
+int main()
+{
+    int n;
+
+    scanf("%d",&n);
+
+    printf("%c",prime(n));
+
+    return 0;
+
+
+}
+
+char prime(int a)
+{
+    int i,count;
+
+    for ( i = 1; i <= a; i++)
+    {
+        if (a%2 == 0)
+        {
+            count++;
+        }
+    }
+    if (count == 2)
+    {
+        return 'y';
+    }
+    else 
+    return 'n';
+
+    
+}
